@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+  let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+
+  function findWord(arrA, arrB) {
+      let word = prompt("nhập từ", "")
+      let isFound = false;
+      for (let i = 0; i < arrA.length; i++) {
+          if (arrA[i] === word) {
+              document.write("Từ tương ứng: " + arrB[i]);
+              isFound = true;
+              break;
+          }
+      }
+      if (isFound === false) {
+          document.write("Không tìm thấy từ")
+      }
+  }
+
+  findWord(arr1, arr2);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num1 = +prompt("Nhập số 1")
+  let num2 = +prompt("Nhập số 2")
+
+  function checkNum(n1, n2) {
+    if (n1 > n2) {
+      alert ("Num1 lớn hơn Num2")
+    } else {
+      return n1 + n2
+    }
+  }
+
+  let result = checkNum(num1, num2);
+  document.write(result)
+</script>
+</body>
+</html>
